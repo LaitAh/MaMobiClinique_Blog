@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- FONT -->
+  <!-- Gotham Rounded -->
   <link href="http://fonts.cdnfonts.com/css/gotham-rounded?styles=36541,36543,36542" rel="stylesheet">
+  <!-- Kiddo Soup -->
+  <link href="//db.onlinewebfonts.com/c/6d98b618e5fb87d88bd4442e8c993f35?family=Kiddo-soup" rel="stylesheet" type="text/css"/>
 
   <!-- BOOTSTAP CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -27,7 +30,9 @@
         <!-- NAV -->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">  
-                <a class="navbar-brand" href="./"><img class="navbar-toogler-logo" src="./public/images/Logo-Final-Couleurs.svg" alt="Logo Ma MobiClinique"></img></a>
+                <a class="navbar-brand" href="./">
+                    <img class="navbar-logo" src="public/images/Logo-Final-Couleurs.svg" alt="Logo Ma MobiClinique">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,10 +49,11 @@
             </div>
         </nav>
         <section class="text-center">
-            <h1>Ma MobiClinique</h1>
-            <hr />
-            <p>
-              La santé est un droit humain fondamental. Retrouvez sur notre blog les dernières actualités en matière de santé pédiatrique. 
-            </p>
+            <div class="titles">
+                <img class="titles-logo" src="public/images/Logo-Final-Couleurs.svg" alt="Logo Ma MobiClinique">
+                <p>
+                  La santé est un droit humain fondamental. Retrouvez sur notre blog les dernières actualités en matière de santé pédiatrique. 
+                </p>
+            </div>
         </section>
     </header>
