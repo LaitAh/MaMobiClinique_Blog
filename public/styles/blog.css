@@ -1,0 +1,176 @@
+body {
+  font-family: 'Gotham Rounded', sans-serif;
+}
+
+header {
+  background-color: red;
+  /* background: url('../images/MaMobiCliniqueBlogBanner.jpg') transparent left top no-repeat; */
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.navbar,
+.navbar-light .navbar-brand,
+.navbar-light .navbar-toggler {
+  font-weight: 400;
+  color: #0bbbef;
+}
+
+header hr {
+  border-width: 3px;
+  border-color: white;
+  width: 60px;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 18px;
+}
+
+.navbar-toggler,
+.nav-link {
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: 400ms;
+}
+
+header section {
+  padding: 1em 0;
+}
+
+header h1 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+header p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+article.card {
+  margin: 2em 0;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+article h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+article p.card-text {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+article a,
+article time {
+  color: #f08372;
+}
+
+article .infos {
+  font-style: italic;
+  color: grey;
+}
+
+.page-link {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  background-color: #0bbbef;
+  color: white;
+}
+
+.page-link:hover {
+  background-color: #f08372;
+  color: white;
+}
+
+.card-header {
+  background: #0bbbef;
+  color: white;
+  font-weight: 400;
+}
+
+.card.mb-4 a {
+  color: black;
+  font-weight: 300;
+}
+
+.card-categories a {
+  text-transform: uppercase;
+}
+
+.card {
+  margin: 2em 0;
+}
+
+aside {
+  display: none;
+  padding: 2em 0;
+}
+
+footer {
+  margin-bottom: 1em;
+}
+
+footer .social-networks {
+  margin: 10px 0;
+}
+
+footer .social-networks a {
+  font-size: 40px;
+  color: black;
+}
+
+footer .links a {
+  color: inherit;
+  font-weight: 300;
+}
+
+footer .social-networks a:hover,
+footer .links a:hover {
+  color: #f08372;
+  text-decoration: none;
+}
+
+/* ---------- TABLET ---------- */
+@media (min-width:768px) {
+  .navbar,
+  .navbar-light .navbar-brand,
+  .navbar-light .navbar-toggler,
+  .navbar-light .navbar-nav .nav-link {
+    color: #0bbbef;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #f08372;
+  }
+}
+
+/* ---------- LAPTOP ---------- */
+@media (min-width:992px) {
+  header section {
+    display: block;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  header p {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 2em;
+  }
+
+  aside {
+    display: block;
+  }
+}
