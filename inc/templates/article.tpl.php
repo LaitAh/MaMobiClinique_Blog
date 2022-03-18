@@ -7,8 +7,8 @@
             <?= $articleToDisplay->content ?>
         </p>
         <p class="infos">
-            Posté par <a href="#" class="card-link"><?= $articleToDisplay->author ?></a> le <time datetime="<?= $articleToDisplay->date ?>"><?= $articleToDisplay->getDateFr() ?></time> dans <a href="#"
-            class="card-link"><?= $articleToDisplay->category ?></a>
+            Posté par <a href="#" class="card-link"><?= $dataAuthorsList[$articleToDisplay->author_id]->firstname ?></a> le <time datetime="<?= $articleToDisplay->date ?>"><?= $articleToDisplay->getDateFr() ?></time> dans <a href="#"
+            class="card-link"><?= $dataCategoriesList[$articleToDisplay->category_id]->category ?></a>
         </p>
     </div>
 </article>

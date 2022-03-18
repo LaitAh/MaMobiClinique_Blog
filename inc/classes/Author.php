@@ -2,12 +2,14 @@
 
 class Author 
 {
-    public $author;
+    public $name;
+    public $firstname;
 
 
-    public function __construct($author ='')
+    public function __construct($name = '', $firstname = '')
      {
-        $this->author = $author;
+        $this->name = $name;
+        $this->firstname = $firstname;
 
      }
 }

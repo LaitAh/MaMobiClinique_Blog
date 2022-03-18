@@ -3,18 +3,20 @@
 class article
 {
     public $title;
+    public $resume;
     public $content;
     public $date;
-    public $author;
-    public $category;
+    public $author_id;
+    public $category_id;
 
-    public function __construct($title = '', $content = '', $author = '', $date = '', $category = '')
+    public function __construct($title = '', $resume = '', $content = '', $author_id = '', $date = '', $category_id = '')
     {
         $this->title = $title;
+        $this->resume = $resume;
         $this->content = $content;
-        $this->author = $author;
+        $this->author_id = $author_id;
         $this->date = $date;
-        $this->category = $category;
+        $this->category_id = $category_id;
     }
 
     public function getDateFr()

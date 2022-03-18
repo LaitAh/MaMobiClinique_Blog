@@ -25,6 +25,7 @@ $dataArticlesList = [];
 foreach ($rsPosts as $article) {
   $dataArticlesList[$article["id"]] = new Article(
     $article["title"],
+    $article["resume"],
     $article["content"],
     $article["author_id"],
     $article["published_date"],
@@ -53,5 +54,8 @@ $rsAuthors = $pdoStatementAuthor->fetchAll(PDO::FETCH_ASSOC);
 
 $dataAuthorsList = [];
 foreach ($rsAuthors as $author) {
-  $dataAuthorsList[$author["id"]] = new Author($author["name"]);
+  $dataAuthorsList[$author["id"]] = new Author(
+    $author["name"],
+    $author["firstname"]
+  );
 }
