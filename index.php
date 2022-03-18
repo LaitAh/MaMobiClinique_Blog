@@ -4,6 +4,8 @@ require __DIR__ . '/inc/classes/Article.php';
 require __DIR__ . '/inc/classes/Author.php';
 require __DIR__ . '/inc/classes/Category.php';
 
+require __DIR__ . '/inc/datadb.php';
+
 $pageToDisplay = 'home';
 if (isset($_GET['page']) && $_GET['page'] !== '') {
   $pageToDisplay = $_GET['page'];
@@ -13,14 +15,12 @@ if (isset($_GET['page']) && $_GET['page'] !== '') {
 // Home Page
 // ----------------
 if ($pageToDisplay === 'home') {
-  require __DIR__ . '/inc/data.php';
   $articlesList = $dataArticlesList;
 } 
 // ----------------
 // Article Page
 // ----------------
 elseif ($pageToDisplay === 'article') {
-  require __DIR__ . '/inc/data.php';
   $articlesList = $dataArticlesList;
 
   $articleId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
@@ -34,7 +34,6 @@ elseif ($pageToDisplay === 'article') {
 // Author Page
 // ----------------
 elseif ($pageToDisplay === 'author') {
-  require __DIR__ . '/inc/data/php';
   $authorsList = $dataAuthorsList;
 
   $idAuthor = $_GET['id'];
@@ -51,7 +50,6 @@ elseif ($pageToDisplay === 'author') {
 // Category Page
 // ----------------
 elseif ($pageToDisplay === 'category') {
-  require __DIR__ . '/inc/data.php';
   $categoriesList = $dataCategoriesList;
 
   $idCategory = $_GET['id'];
