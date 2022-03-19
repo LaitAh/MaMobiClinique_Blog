@@ -37,7 +37,7 @@ elseif ($pageToDisplay === 'author') {
   $authorsList = $dataAuthorsList;
 
   $idAuthor = $_GET['id'];
-  $indexAuthor = $dataAuthorsList[$idAuthor]->author;
+  $authorFirstName = $dataAuthorsList[$idAuthor]->firstname;
 
   $authorsId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
   if ($authorsId !== false && $authorsId !== null) {
@@ -53,7 +53,7 @@ elseif ($pageToDisplay === 'category') {
   $categoriesList = $dataCategoriesList;
 
   $idCategory = $_GET['id'];
-  $indexCategory = $dataCategoriesList[$idCategory]->category;
+  $categoryName = $dataCategoriesList[$idCategory]->category;
 
   $categoriesId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
   if ($categoriesId !== false && $categoriesId !== null) {

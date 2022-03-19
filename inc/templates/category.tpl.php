@@ -1,19 +1,36 @@
-<h1> Catégorie : <?php echo $indexCategory?> </h1>
+<h1 class="category-title">Article(s) dans la catégorie <?= $categoryName ?> </h1>
 
-    <?php foreach ($dataArticlesList as $key =>$articleObject) : 
-      if ($indexCategory == ($dataArticlesList[$key]->category)) {
+    <?php 
+      foreach ($dataArticlesList as $articleId => $articleObject) : 
+      if ($idCategory == ($dataArticlesList[$articleId]->category_id)) {
+    ?>
+      <article class="card">
+        <div class="card-body">
+          <h2 class="card-title">
+            <a href="./index.php?page=article&id=<?= $articleId ?>">
+              <?= $articleObject->title ?>
+            </a>
+          </h2>
+          <p class="card-text">
+            <?= $articleObject->resume ?>
+          </p>
+          <p class="infos">
+            Posté par 
+              <a href="index.php?page=author&id=<?= $articleObject->author_id ?>" class="card-link">
+                <?= $dataAuthorsList[$articleObject->author_id]->firstname ?>
+              </a> 
+            le 
+              <time datetime="<?= $articleObject->date ?>">
+                <?= $articleObject->getDateFr(); ?>
+              </time> 
+            dans 
+              <a href="index.php?page=category&id=<?= $articleObject->category_id ?>" class="card-link">
+                #
+                <?= $dataCategoriesList[$articleObject->category_id]->category ?>
+              </a>
+          </p>
+        </div>
+      </article>
 
-      ?>
-        <article class="card">
-          <div class="card-body">
-            <h2 class="card-title"><a href="./index.php?page=article&id=<?php echo $key ?>"><?php echo $articleObject->title ?></a></h2>
-            <p class="card-text"><?php echo $articleObject->content ?></p>
-            <p class="infos">
-              Posté par <a href="#" class="card-link"><?php echo $articleObject->author ?></a> le <time datetime="<?php echo $articleObject->date ?>"><?php echo $articleObject->date ?></time> dans <a href="#"
-                class="card-link"><?php echo $articleObject->category ?></a>
-            </p>
-          </div>
-        </article>
-
-  <?php  }; endforeach; ?>
+    <?php  }; endforeach; ?>
 

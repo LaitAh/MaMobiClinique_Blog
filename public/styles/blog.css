@@ -66,6 +66,12 @@ article.card {
   border-bottom: 1px solid rgba(0,0,0,.125);
 }
 
+h1.category-title, h1.author-title {
+  color: #0bbbef;
+  font-size: 30px;
+  margin: 1em 0 0 1em;
+}
+
 article h2 {
   font-family: 'Kiddo-soup', 'Gotham Rounded', sans-serif;
   font-size: 25px;
