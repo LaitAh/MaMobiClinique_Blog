@@ -1,4 +1,4 @@
-# Blog de Ma MobiClinique
+# Blog de Ma MobiClinique (Work in progress)
 
 ![alt text](public/images/Logo-Couleurs.svg "Logo Ma MobiClinique")
 
