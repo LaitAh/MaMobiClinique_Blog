@@ -1,6 +1,8 @@
-# Blog de Ma MobiClinique
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-![alt text](public/images/Logo-Final-Couleurs.svg "Logo Ma MobiClinique")
+# Blog de Ma MobiClinique (Work in progress)
+
+![alt text](public/images/Logo-Couleurs.svg "Logo Ma MobiClinique")
 
 Ma MobiClinique est un organisme de bienfaisance québécois. Leur mission ? Offrir des services médicaux et psychosociaux aux enfants vulnérables qui n'ont pas autrement acès aux services de santé.
 
